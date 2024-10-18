@@ -1,6 +1,13 @@
 FROM ubuntu
 
-RUN apt-get update && apt-get install -y build-essential git wget python zip && apt-get clean
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install -y build-essential
+RUN apt-get install -y git
+RUN apt-get install -y wget
+RUN apt-get install -y python3
+RUN apt-get install -y zip
+RUN apt-get clean
 
 WORKDIR /opt
 
