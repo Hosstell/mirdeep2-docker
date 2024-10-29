@@ -7,6 +7,7 @@ RUN apt-get install -y git
 RUN apt-get install -y wget
 RUN apt-get install -y python3
 RUN apt-get install -y zip
+RUN apt-get install -y bowtie
 RUN apt-get clean
 
 WORKDIR /opt
